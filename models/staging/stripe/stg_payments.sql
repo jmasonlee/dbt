@@ -1,5 +1,5 @@
 with payments as (
-    select orderid, amount
+    select orderid, amount / 100 as amount
     from `dbt-tutorial.stripe.payment`
 )
 
